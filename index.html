@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - cool submissions</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="app">
+
+  <div class="styler">
+    <input placeholder="Name..." v-model="name" /><br>
+    <input placeholder="Email..." v-model="email" />
+    <div class="left">{{left}}</div>
+    <div class="submition">{{submition}}</div>
+  </div>
+  <div class="">
+    <character v-for="item in list" v-bind:name="item.name" v-bind:cname="item.codename" v-bind:flipped="item.flipped"></character>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
